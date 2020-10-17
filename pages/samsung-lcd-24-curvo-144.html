@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<header>
+    <meta charset="UTF-8">
+    <title>Full Stack Eletro</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/product.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+    <script src="../javascript/product-page.js" defer></script>
+</header>
+
+<body>
+    <header>
+        <div class="menu-principal">
+            <a href="../index.html">
+                <div class="headerHeight"></div><img id="logo" src="../imagens/fs-logo.png">
+            </a>
+            <a href="../pages/products.html" id="paginas" class="linkPagina"><img
+                    src="../imagens/icones/iconProdutos.svg" class="icones">
+                <p>PRODUTOS</p>
+            </a>
+            <a href="contact.html" id="paginas" class="linkPagina"><img src="../imagens/icones/iconContato.svg"
+                    class="icones">
+                <p>CONTATO</p>
+            </a>
+            <a href="about.html" id="paginas" class="linkPagina"><img src="../imagens/icones/iconSobre.svg"
+                    class="icones">
+                <p>SOBRE</p>
+            </a>
+        </div class="menu-principal">
+    </header>
+    <main>
+        <div class="fundo">
+            <div class="conteudo">
+                <div class="imagem-produto"><img src='../imagens/produtos/samsungLCD24Curvo144.jpg'></div>
+                <div class="infos">
+                    <div class="textos">
+                        <div class="nome-produto">Monitor Samsung LCD 24' Curvo 144hz</div>
+                        <div class="descricao">Módulo de memória RAM da HyperX apresenta velocidade de frequência de
+                            2666MHz, compatível com as mais novas e recentes placas mãe Intel e AMD. Essa linha que
+                            oferece overclock automático com a tecnologia plug and play para fácil instalação e
+                            aproveitamento da frequência mais alta disponível. Os 1,2 volts desviam menos energia do seu
+                            computador e geram menos calor, com dissipador exclusivo, irá se encaixar sob coolers de CPU
+                            de tamanho grande enquanto melhora a dissipação de calor para maior confiabilidade com
+                            design assimétrico exclusivo. Otimização para diversos chipsets, entre eles, série 300 e
+                            X299 Intel. Possui capacidade de 8GB, para desfrutar de potência em seus games e
+                            aplicativos. Aproveite a garantia de vitalícia e suporte técnico local gratuito.Obtenha o
+                            máximo de desempenho e performance para seu PC com essa memória RAM Kingston HyperX FURY
+                            DDR4
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="compra">
+                <div class="endereco">
+                    <div class="cep">
+                        <label for="cep">CEP: </label>
+                        <input id="cep" class="endereco-itens" onkeydown="CepCheck(this.value)" type="number"><br>
+                    </div>
+                    <div class="rua">
+                        <p>Endereço:</p>
+                        <div id="endereco" class="endereco-itens"></div>
+                    </div>
+                    <div class="numero">
+                        <p>Numero:</p>
+                        <div id="numero" class="endereco-itens"></div>
+                    </div>
+                    <div class="estado">
+                        <p>Estado:</p>
+                        <div id="estado" class="endereco-itens"></div>
+                    </div>
+                    <div class="cidade">
+                        <p>Cidade:</p>
+                        <div id="cidade" class="endereco-itens"></div>
+                    </div>
+                </div>
+                <div class="precos">
+                    <span>Valor: </span>
+                    <div class='valor-unidade'>R$2.248,47</div>
+                    <span>Valor Antigo: </span>
+                    <div class='valor-antigo'></div>
+                    <span>Frete: </span>
+                    <div class='valor-frete'>R$10,00</div>
+                    <div class='valor-parcelado'>6x R$374,74</div>
+                </div>
+                <form class="caixa-de-compra">
+                    <div class="quant">
+                        <label for="quantidade">Quantidade: </label>
+                        <input id="quantidade" type="number" value="1" min="1" max="9" placeholder=""><br>
+                    </div>
+                    <span>Total: </span>
+                    <div class='valor-total'>R$2.248,47</div>
+                    <div class="botao"><button type="submit" onclick="alert('Função em construção')">COMPRAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerMisc">
+            <div class="formasPagamento">
+                <p>Formas de pagamento</p><img src="../imagens/icones/bandeiras_cartoes.png">
+            </div>
+            <div>
+                Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" target="_blank"
+                    title="Freepik">Freepik</a> do
+                <a href="https://www.flaticon.com/br/" target="_blank" title="Flaticon">Flaticon</a>
+            </div>
+        </div>
+        <div class="assinatura">
+            <a href="https://github.com/Vinicius-Brito-Costa" target="_blank" title="Perfil do Github">
+                <p>Desenvolvido por Vinicius Brito Costa</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

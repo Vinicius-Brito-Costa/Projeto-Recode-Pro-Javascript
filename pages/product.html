@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<header>
+    <meta charset="UTF-8">
+    <title>Full Stack Eletro</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/product.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+    <script src="../javascript/product-page.js" defer></script>
+</header>
+
+<body>
+    <header>
+        <div class="menu-principal">
+            <a href="../index.html">
+                <div class="headerHeight"></div><img id="logo" src="../imagens/fs-logo.png">
+            </a>
+            <a href="../pages/products.html" id="paginas" class="linkPagina"><img
+                    src="../imagens/icones/iconProdutos.svg" class="icones">
+                <p>PRODUTOS</p>
+            </a>
+            <a href="contact.html" id="paginas" class="linkPagina"><img src="../imagens/icones/iconContato.svg"
+                    class="icones">
+                <p>CONTATO</p>
+            </a>
+            <a href="about.html" id="paginas" class="linkPagina"><img src="../imagens/icones/iconSobre.svg"
+                    class="icones">
+                <p>SOBRE</p>
+            </a>
+        </div class="menu-principal">
+    </header>
+    <main>
+        <div class="fundo">
+            <div class="conteudo">
+                <div class="imagem-produto"><img src='../imagens/produtos/ps5.jpg'></div>
+                <div class="infos">
+                    <div class="textos">
+                        <div class="nome-produto">PS5</div>
+                        <div class="descricao">Desfrute do carregamento extremamente rápido com o SSD de altíssima
+                            velocidade, uma imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e
+                            áudio
+                            3D, além de uma geração inédita de jogos incríveis para PlayStation 5 Domine o poder de uma
+                            CPU
+                            e GPU personalizadas e o SSD com E/S integradas que redefinem as regras do que o console
+                            PlayStation 5 pode fazer. Maximize suas sessões de jogo com tempos de carregamento
+                            praticamente
+                            instantâneos para jogos instalados. A integração personalizada dos sistemas de console PS5
+                            permite que os criadores extraiam dados do SSD tão rápido que eles podem desenvolver jogos
+                            de
+                            formas que antes seriam impossíveis. Mergulhe em mundos com um nível inédito de realismo
+                            enquanto os raios de luz são simulados individualmente, criando sombras e reflexos realistas
+                            em
+                            jogos compatíveis do PS5. Curta seus jogos favoritos do PS5 na sua incrível TV 4K. Desfrute
+                            de
+                            fluidez e taxa de quadros de até 120 qps em jogos compatíveis , com suporte a saída de 120
+                            Hz em
+                            telas 4K. Com uma TV HDR, os jogos compatíveis do PS5 exibem uma variedade de cores
+                            inacreditavelmente vibrante e realista. Os consoles PS5 oferecem suporte a saída 8K, para
+                            que
+                            você possa jogar na sua tela com resolução de 4320p.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="compra">
+                <div class="endereco">
+                    <div class="cep">
+                        <label for="cep">CEP: </label>
+                        <input id="cep" class="endereco-itens" onkeydown="CepCheck(this.value)" type="number"><br>
+                    </div>
+                    <div class="rua">
+                        <p>Endereço:</p>
+                        <div id="endereco" class="endereco-itens"></div>
+                    </div>
+                    <div class="numero">
+                        <p>Numero:</p>
+                        <div id="numero" class="endereco-itens"></div>
+                    </div>
+                    <div class="estado">
+                        <p>Estado:</p>
+                        <div id="estado" class="endereco-itens"></div>
+                    </div>
+                    <div class="cidade">
+                        <p>Cidade:</p>
+                        <div id="cidade" class="endereco-itens"></div>
+                    </div>
+                </div>
+                <div class="precos">
+                    <span>Valor: </span><div class='valor-unidade'>R$4.749,90</div>
+                    <span>Valor Antigo: </span><div class='valor-antigo'>R$4.999,89</div>
+                    <span>Frete: </span><div class='valor-frete'>R$10,00</div>
+                    <div class='valor-parcelado'>6x R$833,33</div>
+                </div>
+                <form class="caixa-de-compra">
+                    <div class="quant">
+                        <label for="quantidade">Quantidade: </label>
+                        <input id="quantidade" type="number" value="1" min="1" max="9" placeholder=""><br>
+                    </div>
+                    <span>Total: </span><div class='valor-total'>R$4.749,90</div>
+                    <div class="botao"><button type="submit" onclick="alert('Função em construção')">COMPRAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerMisc">
+            <div class="formasPagamento">
+                <p>Formas de pagamento</p><img src="../imagens/icones/bandeiras_cartoes.png">
+            </div>
+            <div>
+                Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" target="_blank"
+                    title="Freepik">Freepik</a> do
+                <a href="https://www.flaticon.com/br/" target="_blank" title="Flaticon">Flaticon</a>
+            </div>
+        </div>
+        <div class="assinatura">
+            <a href="https://github.com/Vinicius-Brito-Costa" target="_blank" title="Perfil do Github">
+                <p>Desenvolvido por Vinicius Brito Costa</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

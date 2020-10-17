@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+main{
+    font-family: 'Open Sans';
+    min-height: auto;
+}
+
+.fundo {
+    width: 100%;
+}
+
+.conteudo {
+    text-align: center;
+}
+
+.img-fundo {
+    background-size: cover;
+    background-image: url(../imagens/about/fundo1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+}
+.img-fundo h1{
+    margin: 0;
+    font-size: 80px;
+    display: block;
+    padding-top: 5%;
+}
+.texto {
+    text-align: justify;
+    display: inline-flex;
+
+}
+
+.texto p {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    width: 60%;
+    max-width: 600px;
+}
+
+.texto img {
+    width: 40%;
+}

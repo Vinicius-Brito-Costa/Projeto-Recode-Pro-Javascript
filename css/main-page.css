@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+main{
+    font-family: 'Open Sans';
+}
+.imagem {
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+    background-image: url("../imagens/index/bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 88vh;
+}
+
+.imagem h1{
+    padding: 0;
+    padding-top: 10vh;
+    margin: auto;
+    font-size: 20vw;
+}
+.imagem p{
+    margin: auto;
+    padding-bottom: 10vh;
+    font-size: 4vw;
+}
+
+.texto {
+    text-align: center;
+    padding: 10px 5px 10px;
+    background-color: rgb(63, 53, 121);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.226);
+    min-height: 200px;
+}
+.container{
+    padding: 40px 0 60px;
+    border-left: 4px solid white;
+}
+.texto h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.texto p {
+    font-style: italic;
+    margin: 0;
+}
+@media only screen and (max-width: 702px) {
+    .imagem{
+        padding: 35vh 0;
+        min-height: 100%;
+    }
+    .imagem h1{
+        padding-top: 0;
+    }
+}

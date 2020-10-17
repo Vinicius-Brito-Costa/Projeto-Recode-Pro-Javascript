@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+main{
+    font-family: 'Open Sans';
+    min-height: auto;
+}
+header{
+    z-index: 500;
+}
+
+.fundo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conteudo {
+    max-width: 95vw;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 5px 5px 0 0;
+    padding: 20px 10px;
+    margin: 20px auto;
+    margin-bottom: 0;
+    padding-top: 44px;
+    display: inline-flex;
+}
+
+.infos {
+    margin: 10px;
+    margin-left: 0;
+    text-align: justify;
+    width: 60vw;
+    max-width: 700px;
+}
+
+.imagem-produto {
+    margin: 0;
+    padding: 0;
+    margin: 10px;
+    margin-right: 0;
+    width: 30vw;
+    min-width: 400px;
+    max-width: 400px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imagem-produto img {
+    border-radius: 5px 0 0 5px;
+    min-height: 200px;
+    max-height: 450px;
+    padding: 0;
+}
+
+.imagem-produto:hover img {
+    border-radius: 5px;
+    border: 2px solid black;
+    overflow: visible;
+    transform: scale(1.05);
+}
+
+.imagem-produto:hover {
+    overflow: visible;
+}
+.textos{
+    overflow: hidden;
+    margin-left: 0;
+    height: 450px;
+    border-radius: 0 5px 5px 0;
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 0 10px;
+}
+
+.nome-produto {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.descricao {
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.descricao p {
+    margin: 0;
+}
+.caixa-de-compra {
+    margin-top: 20px;
+    text-align: right;
+    display: inline;
+    width: 30vw;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#quantidade {
+    color:white;
+    outline: none;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 5px 5px 0 0;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.301);
+}
+.compra{
+    display: inline-flex;
+    background-color: black;
+    width: 95vw;
+    max-width: 1120px;
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 0 0 5px 5px;
+    padding: 20px 10px;
+    margin: 20px auto;
+    margin-top: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.336);
+}
+.endereco{
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.075);
+}
+.endereco-itens{
+    margin: 10px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 0 5px 5px 0;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.301);
+}
+.endereco-itens p{
+    margin: 0 10px;
+}
+.precos {
+    margin-bottom: 20px;
+    margin-right: 0;
+    margin-left: 20vw;
+    text-align: right;
+}
+.precos div{
+    margin-bottom: 10px 0;
+}
+.valor-antigo{
+    text-decoration: line-through;
+}
+#cep {
+    color:white;
+    outline: none;
+    width: 65px;
+    height: 15px;
+}
+.valor-total{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+button {
+    margin: 0;
+    margin-bottom: 0;
+    outline: none;
+    margin-top: 50px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: rgb(123, 116, 158);
+    border: 1px solid rgba(255, 255, 255, 0.205);
+    transition: .5s;
+}
+
+button:hover {
+    transition: ease-in-out .5s;
+    background-color: rgb(206, 38, 38);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+}
+
+@media only screen and (max-width: 702px) {
+    .conteudo {
+        min-width: 90vw;
+        display: inline-block;
+    }
+
+    .imagem-produto {
+        margin: auto;
+        max-width: 90vw;
+        width: 90vw;
+        margin-bottom: 0;
+    }
+
+    .imagem-produto img {
+        min-width: 90vw;
+        max-height: 90vw;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .textos{
+        margin-top: 0;
+    }
+
+    .imagem-produto:hover {
+        overflow: hidden;
+        
+    }
+
+    .imagem-produto:hover img {
+        overflow: hidden;
+        margin-bottom: 0;
+        transform: none;
+        border: none;
+    }
+    .infos {
+        margin: 10px;
+        margin-top: 0;
+        text-align: justify;
+        width: 90vw;
+        max-width: 700px;
+    }
+    .nome-produto {
+        margin-top: 0;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .descricao {
+        font-size: 15px;
+        max-height: 300px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .precos {
+        font-size: 20px;
+        margin: 2px 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .caixa-de-compra {
+        text-align: center;
+        display: inline;
+        width: 90vw;
+    }
+    .valor-total{
+        font-size: 40px;
+    }
+    button{
+        font-size: 30px;
+        padding: 20px 150px;
+    }
+}

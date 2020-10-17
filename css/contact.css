@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+main{
+    font-family: 'Open Sans';
+    min-height: auto;
+}
+.conteudo{
+    margin: auto;
+    margin-top: 50px;
+    width: 75vw;
+    background-color: rgba(192, 192, 192, 0.103);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.164);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.068);
+}
+.inputs {
+    margin-top: 0;
+    width: 35vw;
+    min-width: 100px;
+    display: inline-flex;
+    max-width: 280px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.imagem{
+    float: right;
+    text-align: center;
+    width: 15vw;
+    margin: 0;
+    min-width: 30px;
+}
+.form-input {
+    /*Remoção*/
+    margin: 0;
+    border: none;
+    width: 350px;
+    margin-left: 20px;
+
+    /*Estilos*/
+}
+
+.itens {
+    /*Remoção*/
+    color: white;
+    background-color: transparent;
+    outline: none;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+    width: 346px;
+    margin: 10px;
+    margin-left: 0;
+}
+.itens:checked{
+    background-color: none;
+}
+.itens:focus{
+    background-color: rgba(255, 255, 255, 0.062);
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.247);
+    opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.247);
+  }
+  
+  ::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.247);
+  }
+
+textarea {
+    resize: none;
+    padding-bottom: 80px;
+}
+
+.botao {
+    margin: 0;
+    border: none;
+    width: 350px;
+    margin-left: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+button{
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.281);
+    background-color: rgb(123, 116, 158);
+}
+button:hover{
+    background-color: rgb(155, 146, 201);
+}
+@media only screen and (max-width: 702px) {
+    .imagem{
+        visibility: hidden;
+    }
+}

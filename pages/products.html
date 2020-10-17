@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<header>
+    <meta charset="UTF-8">
+    <title>Full Stack Eletro</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/products.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+    <script src="../javascript/products-main.js" defer></script>
+    <script src="../javascript/products-navigation-bar.js" defer></script>
+</header>
+
+<body>
+    <header>
+        <div class="menu-principal">
+            <a href="../index.html">
+                <div class="headerHeight"></div><img id="logo" src="../imagens/fs-logo.png">
+            </a>
+            <a href="../index.html" id="paginas" class="linkPagina"><img src="../imagens/icones/iconMain.svg"
+                    class="icones">
+                <p>HOME</p>
+            </a>
+            <a href="contact.html" id="paginas" class="linkPagina"><img src="../imagens/icones/iconContato.svg"
+                    class="icones">
+                <p>CONTATO</p>
+            </a>
+            <a href="about.html" id="paginas" class="linkPagina"><img src="../imagens/icones/iconSobre.svg"
+                    class="icones">
+                <p>SOBRE</p>
+            </a>
+        </div class="menu-principal">
+    </header>
+    <main>
+        <section class="products-page">
+            <section class="barra-produtos">
+                <p id="ordernar" onclick="ShowCategoriesMobile()">Ordenar produtos</p>
+                <nav id="link-barra-produtos">
+                    <div id="todos">
+                        <div class="link-barra" onclick="ShowOnly('todos')">TODOS</div>
+                    </div>
+                    <div id="hardware">
+                        <div class="link-barra" onclick="ShowSubCategories('hardware'), ShowOnly('hardware')">HARDWARE</div>
+                        <div id="sub-link">
+                            <div id="">CPU</div>
+                            <div id="">GPU</div>
+                            <div id="">MEMÓRIA</div>
+                            <div id="">MOBO</div>
+                        </div>
+                    </div>
+                    <div id="monitores">
+                        <div class="link-barra" onclick="ShowSubCategories('monitores'), ShowOnly('monitores')">MONITORES</div>
+                        <div id="sub-link">
+                            <div id="">LCD</div>
+                            <div id="">LED</div>
+                        </div>
+                    </div>
+                    <div id="mouses">
+                        <div class="link-barra" onclick="ShowSubCategories('mouses'), ShowOnly('mouses')">MOUSES</div>
+                        <div id="sub-link">
+                            <div id="">COM FIO</div>
+                            <div id="">SEM FIO</div>
+                        </div>
+                    </div>
+                    <div id="teclados">
+                        <div class="link-barra" onclick="ShowSubCategories('teclados'), ShowOnly('teclados')">TECLADOS</div>
+                        <div id="sub-link">
+                            <div id="">COM FIO</div>
+                            <div id="">SEM FIO</div>
+                        </div>
+                    </div>
+                    <div id="consoles">
+                        <div class="link-barra" onclick="ShowSubCategories('consoles'), ShowOnly('consoles')">CONSOLES</div>
+                        <div id="sub-link">
+                            <div id="">Playstation</div>
+                            <div id="">Xbox</div>
+                            <div id="">Nintendo</div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <section class="produtos">
+                <div class="container">
+                    <div class="box-produtos" id="consoles" onmouseover="ExpandProduct(this)">
+                        <img src="../imagens/produtos/ps5.jpg"onclick="GoTo('ps5.html')">
+                        <div class="box-descricao">
+                            <span class="preco-antigo">R$4.999,89</span>
+                            <span class="nome-produto">PS5</span>
+                            <span class="preco-atual">R$4.749,90</span>
+                            <span class="promo">-5%</span>
+                        </div>
+                    </div>
+                    <div class="box-produtos" id="consoles" onclick="GoTo('ps4.html')">
+                        <img src="../imagens/produtos/ps4.jpg">
+                        <div class="box-descricao">
+                            <span class="preco-antigo">R$ 2.200,00</span>
+                            <span class="nome-produto">PS4</span>
+                            <span class="preco-atual">R$2.090,00</span>
+                            <span class="promo">-5%</span>
+                        </div>
+                    </div>
+                    <div class="box-produtos" id="monitores">
+                        <img src="../imagens/produtos/acerLED23p6.jpg"onclick="GoTo('monitor-acer-led-23.html')">
+                        <div class="box-descricao">
+                            <span class="preco-antigo">1.888,78</span>
+                            <span class="nome-produto">Monitor Acer LED 23.6</span>
+                            <span class="preco-atual">R$1.329,90</span>
+                            <span class="promo">-31%</span>
+                        </div>
+                    </div>
+                    <div class="box-produtos" id="hardware">
+                        <img src="../imagens/produtos/rtx2070HOF.jpg"onclick="GoTo('rtx-2070-hof.html')">
+                        <div class="box-descricao">
+                            <span class="preco-antigo">R$3.529,29</span>
+                            <span class="nome-produto">RTX 2070 HOF</span>
+                            <span class="preco-atual">R$2.999,90</span>
+                            <span class="promo">-15%</span>
+                        </div>
+                    </div>
+                    <div class="box-produtos" id="mouses">
+                        <img src="../imagens/produtos/cougarMinosXT.jpg"onclick="GoTo('cougar-minos-xt.html')">
+                        <div class="box-descricao">
+                            <span class="preco-antigo">R$184,09</span>
+                            <span class="nome-produto">Mouse Cougar Minos XT</span>
+                            <span class="preco-atual">R$162,00</span>
+                            <span class="promo">-12%</span>
+                        </div>
+                    </div>
+                    <div class="box-produtos" id="teclados">
+                        <img src="../imagens/produtos/razerBlackWidowsTeChroma.jpg"onclick="GoTo('razer-blackwidow-te-chroma.html')">
+                        <div class="box-descricao">
+                            <span class="preco-antigo">R$699,99</span>
+                            <span class="nome-produto">Teclado Razer Blackwidow</span>
+                            <span class="preco-atual">R$599,99</span>
+                            <span class="promo">-16%</span>
+                        </div>
+                    </div>
+                    <div class="box-produtos" id="hardware">
+                        <img src="../imagens/produtos/ramDDR48GB.jpg"onclick="GoTo('ram-ddr4-8gb-hyperx.html')">
+                        <div class="box-descricao">
+                            <span class="preco-antigo">R$376,35</span>
+                            <span class="nome-produto">Memória Ram 8GB DDR4</span>
+                            <span class="preco-atual">R$269,90</span>
+                            <span class="promo">-30%</span>
+                        </div>
+                    </div>
+                    <div class="box-produtos" id="monitores">
+                        <img src="../imagens/produtos/samsungLCD24Curvo144.jpg"onclick="GoTo('samsung-lcd-24-curvo-144.html')">
+                        <div class="box-descricao">
+                            <span class="preco-antigo">&nbsp;</span>
+                            <span class="nome-produto">Monitor Samsung 24' 144h</span>
+                            <span class="preco-atual">R$2.248,47</span>
+                            <span class="promo"></span>
+                        </div>
+                    </div>
+                    <div class="box-produtos" id="hardware">
+                        <img src="../imagens/produtos/ryzen3700x.jpg"onclick="GoTo('amd-ryzen-3700x.html')">
+                        <div class="box-descricao">
+                            <span class="preco-antigo">&nbsp;</span>
+                            <span class="nome-produto">Processador Ryzen 3700x</span>
+                            <span class="preco-atual">R$2.169,90</span>
+                            <span class="promo">-20%</span>
+                        </div>
+                    </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="footerMisc">
+            <div class="formasPagamento">
+                <p>Formas de pagamento</p><img src="../imagens/icones/bandeiras_cartoes.png">
+            </div>
+            <div>
+                Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" target="_blank"
+                    title="Freepik">Freepik</a> do
+                <a href="https://www.flaticon.com/br/" target="_blank" title="Flaticon">Flaticon</a>
+            </div>
+        </div>
+        <div class="assinatura">
+            <a href="https://github.com/Vinicius-Brito-Costa" target="_blank" title="Perfil do Github">
+                <p>Desenvolvido por Vinicius Brito Costa</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

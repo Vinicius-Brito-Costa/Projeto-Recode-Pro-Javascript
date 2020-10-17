@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<header>
+    <meta charset="UTF-8">
+    <title>Full Stack Eletro</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/product.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+    <script src="../javascript/product-page.js" defer></script>
+</header>
+
+<body>
+    <header>
+        <div class="menu-principal">
+            <a href="../index.html">
+                <div class="headerHeight"></div><img id="logo" src="../imagens/fs-logo.png">
+            </a>
+            <a href="../pages/products.html" id="paginas" class="linkPagina"><img
+                    src="../imagens/icones/iconProdutos.svg" class="icones">
+                <p>PRODUTOS</p>
+            </a>
+            <a href="contact.html" id="paginas" class="linkPagina"><img src="../imagens/icones/iconContato.svg"
+                    class="icones">
+                <p>CONTATO</p>
+            </a>
+            <a href="about.html" id="paginas" class="linkPagina"><img src="../imagens/icones/iconSobre.svg"
+                    class="icones">
+                <p>SOBRE</p>
+            </a>
+        </div class="menu-principal">
+    </header>
+    <main>
+        <div class="fundo">
+            <div class="conteudo">
+                <div class="imagem-produto"><img src='../imagens/produtos/cougarMinosXT.jpg'></div>
+                <div class="infos">
+                    <div class="textos">
+                        <div class="nome-produto">Mouse Cougar Minos XT</div>
+                        <div class="descricao">O Minos XT é um mouse de jogo ágil e poderoso, ideal para quem gosta de
+                            uma experiência de jogo ágil. Este mouse para jogos foi construído para durar. Por trás de
+                            seus dois principais botões estão dois comutadores de jogos originais com garantia de pelo
+                            menos 20 milhões de cliques. A área retroiluminada do Minos XT permite criar a melhor
+                            atmosfera de jogo para a sua área de jogo. Escolha um dos sete maravilhosos modos
+                            predefinidos que preparamos para você e aproveite o espetáculo!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="compra">
+                <div class="endereco">
+                    <div class="cep">
+                        <label for="cep">CEP: </label>
+                        <input id="cep" class="endereco-itens" onkeydown="CepCheck(this.value)" type="number"><br>
+                    </div>
+                    <div class="rua">
+                        <p>Endereço:</p>
+                        <div id="endereco" class="endereco-itens"></div>
+                    </div>
+                    <div class="numero">
+                        <p>Numero:</p>
+                        <div id="numero" class="endereco-itens"></div>
+                    </div>
+                    <div class="estado">
+                        <p>Estado:</p>
+                        <div id="estado" class="endereco-itens"></div>
+                    </div>
+                    <div class="cidade">
+                        <p>Cidade:</p>
+                        <div id="cidade" class="endereco-itens"></div>
+                    </div>
+                </div>
+                <div class="precos">
+                    <span>Valor: </span><div class='valor-unidade'>R$162,00</div>
+                    <span>Valor Antigo: </span><div class='valor-antigo'>R$184,09</div>
+                    <span>Frete: </span><div class='valor-frete'>R$10,00</div>
+                    <div class='valor-parcelado'>6x R$30,68</div>
+                </div>
+                <form class="caixa-de-compra">
+                    <div class="quant">
+                        <label for="quantidade">Quantidade: </label>
+                        <input id="quantidade" type="number" value="1" min="1" max="9" placeholder=""><br>
+                    </div>
+                    <span>Total: </span><div class='valor-total'>R$162,00</div>
+                    <div class="botao"><button type="submit" onclick="alert('Função em construção')">COMPRAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerMisc">
+            <div class="formasPagamento">
+                <p>Formas de pagamento</p><img src="../imagens/icones/bandeiras_cartoes.png">
+            </div>
+            <div>
+                Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" target="_blank"
+                    title="Freepik">Freepik</a> do
+                <a href="https://www.flaticon.com/br/" target="_blank" title="Flaticon">Flaticon</a>
+            </div>
+        </div>
+        <div class="assinatura">
+            <a href="https://github.com/Vinicius-Brito-Costa" target="_blank" title="Perfil do Github">
+                <p>Desenvolvido por Vinicius Brito Costa</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
